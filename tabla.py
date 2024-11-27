@@ -15,14 +15,11 @@ class HashTable:
         index = self._hash(key)
         return key in self.table[index]
 
-# Crear una tabla hash de tamaño 10
 hash_table = HashTable(10)
 
-# Agregar elementos a la tabla
 hash_table.add("manzana")
 hash_table.add("banana")
 hash_table.add("naranja")
 
-# Buscar elementos en la tabla
-print("Buscar 'manzana':", hash_table.search("manzana"))  # Debería devolver True
-print("Buscar 'pera':", hash_table.search("pera"))        # Debería devolver False
+print("Buscar 'manzana':", hash_table.search("manzana"))  
+print("Buscar 'pera':", hash_table.search("pera"))       
